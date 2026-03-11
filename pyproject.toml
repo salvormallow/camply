@@ -76,7 +76,8 @@ dev = [
   "freezegun~=1.5.5",
   # Linting
   "mypy>=1.6.1",
-  "ruff~=0.1.7"
+  "ruff~=0.1.7",
+  "jupyter>=1.1.1"
 ]
 docs = [
   "markdown-callouts",
