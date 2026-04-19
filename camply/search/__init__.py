@@ -5,6 +5,7 @@ camply search __init__ file
 from typing import Dict, List, Type
 
 from camply.search.base_search import BaseCampingSearch
+from camply.search.search_camava5 import SearchSantaClaraCountyParks
 from camply.search.search_going_to_camp import SearchGoingToCamp
 from camply.search.search_recreationdotgov import (
     SearchRecreationDotGov,
@@ -47,6 +48,8 @@ __search_providers__: List[Type[BaseCampingSearch]] = [
     SearchFairfaxCountyParks,
     SearchMaricopaCountyParks,
     SearchOregonMetro,
+    # Camava5
+    SearchSantaClaraCountyParks,
     # Tours and Timed Entry (RecDotGov)
     SearchRecreationDotGovTicket,
     SearchRecreationDotGovTimedEntry,

@@ -5,6 +5,7 @@ providers __init__ file
 from typing import Union
 
 from .base_provider import BaseProvider
+from .camava5 import Camava5Provider, SantaClaraCountyParks
 from .going_to_camp.going_to_camp_provider import GoingToCamp
 from .recreation_dot_gov.recdotgov_camps import RecreationDotGov
 from .recreation_dot_gov.recdotgov_tours import (
@@ -30,6 +31,7 @@ from .usedirect.variations import (
 from .xanterra.yellowstone_lodging import Yellowstone
 
 ProviderType = Union[
+    SantaClaraCountyParks,
     GoingToCamp,
     RecreationDotGov,
     RecreationDotGovDailyTicket,
@@ -52,25 +54,27 @@ ProviderType = Union[
 ]
 
 __all__ = [
+    "AlabamaStateParks",
+    "ArizonaStateParks",
     "BaseProvider",
-    "ProviderType",
+    "Camava5Provider",
+    "FairfaxCountyParks",
+    "FloridaStateParks",
     "GoingToCamp",
+    "MaricopaCountyParks",
+    "MinnesotaStateParks",
+    "MissouriStateParks",
+    "NorthernTerritory",
+    "OhioStateParks",
+    "OregonMetro",
+    "ProviderType",
     "RecreationDotGov",
     "RecreationDotGovDailyTicket",
     "RecreationDotGovDailyTimedEntry",
     "RecreationDotGovTicket",
     "RecreationDotGovTimedEntry",
-    "Yellowstone",
     "ReserveCalifornia",
-    "NorthernTerritory",
-    "FloridaStateParks",
-    "OregonMetro",
-    "OhioStateParks",
+    "SantaClaraCountyParks",
     "VirginiaStateParks",
-    "ArizonaStateParks",
-    "MaricopaCountyParks",
-    "MissouriStateParks",
-    "AlabamaStateParks",
-    "FairfaxCountyParks",
-    "MinnesotaStateParks",
+    "Yellowstone",
 ]
